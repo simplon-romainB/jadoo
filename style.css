@@ -1,0 +1,42 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none ;
+    color: black;
+}
+
+.centertext {
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.introtext{
+    text-align: justify;
+    width: 20%;
+}
+
+.introduction {
+    width:100%;
+    height: 50%;
+    background-image: url('/sushis.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.orangeintro {
+    color: orange;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.travel {
+    width: 100vh;
+    height: 100vh;
+    background-color: grey;
+}
