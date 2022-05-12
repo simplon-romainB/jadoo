@@ -6,11 +6,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="images/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
+       
     </head>
     
     <body>
@@ -98,43 +94,70 @@
                 <img src="img/button_play.svg" alt = "play button" class="playbutton"> 
             </div>
             <h1>Un voyage<br> gastronomique<br> entre le Japon<br> et la France...</h1>
-            <p class ="traveltext">Passé par des maisons étoilées en France, le cuisinier japonais s’est forgé une solide expérience dans l’Hexagone : aujourd’hui franc-comtois d’adoption, il tisse chaque jour au sein de son restaurant gastronomique japonais à Paris</p>
-            <caption class="wrapperimg">
-                <img class src="img/wrapper_illustration_1.jpg" alt="illustration 1">
-                <img src="img/wrapper_illustration_2.jpg" alt="illustration 2">
-            </caption>
+            <p class ="traveltext">Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</p>
+        </section>   
+            <figure class="wrapperimg1">
+                <img  src="img/wrapper_illustration_1.jpg" alt="illustration 1">
+            </figure>
+            <figure class="wrapperimg2">
+                <img  src="img/wrapper_illustration_2.jpg" alt="illustration 2">
+            </figure>
+        <section class="social">
+            <h4>RAPIDE ET PRATIQUE</h4>
+            <p class = "commandez">Commandez</p>
+            <p class="jadoosite">sur le site Jadoo</p>
+            <div class="socialflex">
+                <figure>
+                    <img class= "socialimg" src="img/logo_uberEats.png" alt="logo ubereats">
+                </figure>
+                <div class="socialtext">
+                    <h4>UberEats</h4>
+                    <p class="ubereatstext">Commandez tous vos plats depuis UberEats</p>
+                </div>
+            </div>
+            <div class="socialflex">
+                <figure>
+                    <img class= "socialimg" src="img/logo_jadoo_1.svg" alt="logo jadoo">
+                </figure>
+                <div class="socialtext">
+                    <h4>Jadoo.fr</h4>
+                    <p class="ubereatstext">Ou commandez en ligne sur le site officiel de Jadoo</p>
+                </div>
+            </div>
+            <div class="socialflex">
+                <figure>
+                    <img class= "socialimg" src="img/logo_transport.png" alt="logo transport">
+                </figure>
+                <div class="socialtext">
+                    <h4>Livraison ultra rapide</h4>
+                    <p class="ubereatstext">Soyez livré en 20 minutes maximum</p>
+                </div>
+            </div>
+            <button class="buttondiscover">Découvrir la carte</button>
         </section>
-            <p>RAPIDE ET PRATIQUE</p>
-            <p class = "orangeintro">Commandez</p>
-            <h2>sur le site Jadoo</h2>
-            <div>
-                <h4>UberEats</h4>
-                <p>Commandez tous vos plats depuis UberEats</p>
-            </div>
-            <div>
-                <h4>Jadoo.fr</h4>
-                <p>Ou commandez en ligne sur le site officiel de Jadoo</p>
-            </div>
-            <div>
-                <h4>Livraison ultra rapide</h4>
-                <p>Soyez livré en 20 minutes maximum</p>
-            </div>
-            <button>Découvrir la carte</button>
-        
         <section class = "contact">
             <p>PRENDRE RENDEZ-VOUS</p>
             <h2>Contactez-nous pour réserver au restaurant</h2>
-            <form>
-                <label for= "fname">Prénom:</label><br>
-                <input type = "text" id ="fname" name ="fname"><br>
-                <label for= "name">nom:</label><br>
-                <input type = "text" id ="name" name ="name"><br>
-                <label for= "mail">adresse mail</label><br>
-                <input type = "text" id ="mail" name ="mail"><br>
-                <label for= "fname">message:</label><br>
-                <input type = "text" id ="message" name ="message"><br>
-                <button>Envoyer</button>
-            </form>
+            <div class = "form">
+                <div class="leftform">
+                    <h4 class="formtitle">Formulaire de contact</h4>
+                    <h5 class="formtitle">Remplissez le formulaire ci-dessous
+                        pour nous contacter</h5>
+                    <form>
+                        <label for= "fname">Prénom</label>
+                        <input type = "text" id ="fname" name ="fname" placeholder="prénom" required>
+                        <label for= "name">nom</label>
+                        <input type = "text" id ="name" name ="name" placeholder = "nom" required>
+                        <label for= "mail" class="formblock">adresse email</label >
+                        <input type = "email" id ="mail" name ="mail" placeholder = "email" required class="formblock">
+                        <label for= "fname" class="formblock">message</label >
+                        <input type = "text" id ="message" name ="message" placeholder = "votre message" class="formblock">
+                        <button class="submitbutton"><img src="img/bouton_formulaire_coche.svg" alt="bouton formulaire coché">Envoyer</button>
+                    </form>
+                </div>
+                <div class="rightform">
+                </div>
+            </div>
         </section>
         <footer>
             <div>
