@@ -1,0 +1,250 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none ;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}
+
+.animationmaki {
+    background-color: white;
+    width:150px;
+    height:208px;
+    border-radius: 5%;
+
+
+
+}
+.animationmaki:hover::after {
+    z-index: -1;
+    position:relative;
+    display:inline-block;
+    right:37.5px;
+    bottom:37.5px;
+    width:150px;
+    height:150px;
+    content:"";
+    background-image: url("../img/decoration_rose.svg");
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    
+}
+
+.bienvenue {
+    margin-left: 150px;
+    font: 84px "volkhov-bold";
+    color: #fff;
+    font-weight: bold;
+    background-image: url("../img/souligne_rose.svg");
+    background-repeat: no-repeat;
+    background-position-x: 3%;
+    background-position-y: 97%;
+}
+
+.buttondiscover {
+    background-color: #f1a501;
+    padding:15px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.buttonintro {
+    margin-left: 150px;
+    background-color: #f1a501;
+    padding:15px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font: Arial, Helvetica, sans-serif;
+
+}
+.centertext {
+    text-align: center;
+    margin-left: 150px;;
+}
+
+.discover {
+    height:869px;
+    padding:150px
+}
+
+h1{
+    font-size: 84px;
+    color: white;
+}
+
+h4{
+    font: 18px "poppins-regular";
+    font-weight: normal;
+    font-weight: 600;
+    color: #5e6282;
+    margin-bottom: 10px;
+}
+
+header{
+    height:70px;
+    position:sticky;
+    background-color: white;
+    top:0;
+}
+
+.introcontainer {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.introtext{
+    color: white;
+    text-align: justify;
+    max-width: 460px;
+    margin-left: 150px;
+    font: 500 16px/30px "poppins-regular";
+}
+
+.introduction {
+    background-image: url('../img/illustration_principale.jpg');
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.jadoologo {
+    margin-right: 20px;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    top:30px;
+}
+
+.logogroup {
+    position: absolute;
+    display: inline-block;
+    margin-left: 150px;
+    vertical-align: middle;
+    top:20px;
+}
+
+.makiflex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 150px;
+}
+
+.makimage {
+    margin:auto;
+    display: block;
+}
+
+.makitext {
+    width: 150px;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    width: 50%;
+    display: inline-block;
+    right: 0;
+    vertical-align:middle;
+
+
+}
+
+.news {
+    font: 50px "volkhov-bold";
+    color: #14183e;
+    margin-top: 10px;
+}
+
+.newsflex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 150px;
+}
+
+.newsimg {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.newstext {
+    
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    padding: 20px;
+    font-family: "poppins-regular";
+    font-weight: 500;
+    font-style: normal;
+    color: #5e6282;
+}
+.orangeintro {
+    color: salmon;
+    width: 100%;
+    font-size: 20px;
+    margin-left: 150px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.playbutton {
+    position:relative;
+    top: 55px;
+    left:125px;
+    display:inline-block;
+    background-color:white;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.travel {
+    width: 200vh;
+    height: 1019px;
+    background-image: url(../img/illustration_chef.jpg);
+    padding: 150px;
+    background-size: contain;
+}
+
+.traveltext {
+    color: white;
+    text-align: justify;
+    max-width: 460px;
+    font: 500 16px/30px "poppins-regular";
+}
+.video {
+    display:block;
+    background-image: url(../img/visu_video.jpg);
+    width:320px;
+    height:180px;
+    background-size: contain;
+    
+}
+
+.wrapperimg {
+    display: block;
+    position:absolute;
+    left: -150px;
+}

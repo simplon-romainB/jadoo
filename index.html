@@ -4,12 +4,21 @@
     <head>
         <title>Jadoo: un voyage culinaire gourmet et gourmand.</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="images/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
     </head>
     
     <body>
         <header>
-            <p class = "logo">Jadoo</p>
+            <div class = 'logogroup'>
+                <img class = 'jadoologo'src="img/logo_jadoo_1.jpg" alt="jadoo logo1">
+                <img src="img\logo_jadoo_2.svg" alt="Jadoo Logo2">
+            </div>
             <ul class = "menu">
                 <li><a href = "#news">Les nouveautés</a></li>
                 <li><a href = "#discover">Découvrir</a></li>
@@ -19,53 +28,137 @@
         </header>
         <section class="introduction">
                  <br>
-                 <p class = "orangeintro">Un voyage culinaire gourmet et gourmand</p>
-                 <br>
-                 <h1>Bienvenue<br>
+                 <div class = 'introcontainer'>
+                    <p class = "orangeintro">UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</p>
+                    <br>
+                    <h1 class = 'bienvenue'>Bienvenue<br>
                     au restaurant<br>
                     Jadoo </h1>
-                 <p class="introtext">Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi IIDA. </p>
-                <button>Découvrir la carte</button>
+                    <h5 class="introtext">Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi IIDA. </h5>
+                    <button class="buttonintro">Découvrir la carte</button>
+                </div>
         </section>
         <section class = "discover">
-            <p class="centertext">Découvrez</p>
-            <h2 class="centertext">Les nouveautés Jadoo</h2>
-            <div class ="centertext">Boulettes de poulet 
-                au gingembre sauce 
-                sucrée salée “Tsukuné”
-            </div>
-            <div class ="centertext">Nouilles japonaises chaudes
-                à base de farine de blé “Udon” 
-            </div>
-            <div class ="centertext">Echine de porc panée 
-                à la japonaise 
-                “Tonkatsu-Teishoku"
-            </div>
+            <h4 class= "centertext">Découvrez</h4>
+            <h2 class="centertext news">Les nouveautés Jadoo</h2>
+            <div class = newsflex>
+                <div class ="newsflexelement">
+                    <img class ="newsimg" src="img/plat_1.png" alt="plat 1">
+                    <div class ="newstext">
+                        Boulettes de poulet<br>
+                        au gingembre sauce <br>
+                        sucrée salée “Tsukuné”
+                    </div>
+                    
+                </div>
+                <div class ="newsflexelement">
+                    <img  class ="newsimg"  src="img/plat_2.png" alt="plat 2">
+                    <div class ="newstext">
+                        Nouilles japonaises chaudes <br>
+                        à base de farine de blé “Udon” 
+                    </div>
+                </div> 
+                <div class ="newsflexelement">
+                    <img class ="newsimg" src="img/plat_3.png" alt="plat 3">
+                    <div class ="newstext">
+                        Echine de porc panée <br>
+                        à la japonaise <br>
+                        “Tonkatsu-Teishoku" 
+                    </div>
+                </div> 
+            </div>  
             <br>
-            <div>
-                <h3 class ="centertext">California Tobiko</h3>
-                <p class ="centertext">Saumon, Thon, mayonnaise</p>
+            <div class="makiflex">
+                <div class = "animationmaki">
+                    <img class= "makimage" src="img/maki_1.png" alt="maki 1">
+                    <h3 class="makitext">California Tobiko</h3>
+                    <p class="makitext">Saumon, Thon, mayonnaise</p> 
+                </div>
+                <div class = "animationmaki">
+                    <img class= "makimage" src="img/maki_2.png" alt="maki 2">
+                    <h3 class="makitext">California Rolls</h3>
+                    <p class="makitext">Saumon, avocat, mayonnaise</p>
+                </div>
+                <div class = "animationmaki">
+                    <img class= "makimage" src="img/maki_3.png" alt="maki 3">
+                    <h3 class="makitext">ebi</h3>
+                    <p class="makitext">crevettes, avocat, menthe, coriandre</p>
+                </div>
+                <div class = "animationmaki">
+                    <img class = "makimage" src="img/maki_4.png" alt="maki 4">
+                    <h3 class="makitext">ikura rolls</h3>
+                    <p class="makitext">oeufs de saumons</p>
+                </div>
             </div>
-            <div>
-                <h3 class ="centertext">California Rolls</h3>
-                <p class ="centertext">Saumon, avocat, mayonnaise</p>
-            </div>
-            <div>
-                <h3 class ="centertext">ebi</h3>
-                <p class ="centertext">crevettes, avocat, menthe, coriandre</p>
-            </div>
-            <div>
-                <h3 class ="centertext">ikura rolls</h3>
-                <p class ="centertext">oeufs de saumons</p>
-            </div>
-            <button>Découvrir la carte</button>
+            <button class="buttondiscover">Découvrir la carte</button>
             
         </section>
         <section class = 'travel'>
-            <iframe width="320" height = "180" src = "https://www.youtube.com/watch?v=BUYbPK_yPlQ" controls autobuffer></iframe>
-            <h1>Un voyage gastronomique entre le Japon et la France...</h1>
-            <p class ="introtext">Passé par des maisons étoilées en France, le cuisinier japonais s’est forgé une solide expérience dans l’Hexagone : aujourd’hui franc-comtois d’adoption, il tisse chaque jour au sein de son restaurant gastronomique japonais à Paris</p>
+            <div class = 'video'>
+                <img src="img/button_play.svg" alt = "play button" class="playbutton"> 
+            </div>
+            <h1>Un voyage<br> gastronomique<br> entre le Japon<br> et la France...</h1>
+            <p class ="traveltext">Passé par des maisons étoilées en France, le cuisinier japonais s’est forgé une solide expérience dans l’Hexagone : aujourd’hui franc-comtois d’adoption, il tisse chaque jour au sein de son restaurant gastronomique japonais à Paris</p>
+            <caption class="wrapperimg">
+                <img class src="img/wrapper_illustration_1.jpg" alt="illustration 1">
+                <img src="img/wrapper_illustration_2.jpg" alt="illustration 2">
+            </caption>
         </section>
+            <p>RAPIDE ET PRATIQUE</p>
+            <p class = "orangeintro">Commandez</p>
+            <h2>sur le site Jadoo</h2>
+            <div>
+                <h4>UberEats</h4>
+                <p>Commandez tous vos plats depuis UberEats</p>
+            </div>
+            <div>
+                <h4>Jadoo.fr</h4>
+                <p>Ou commandez en ligne sur le site officiel de Jadoo</p>
+            </div>
+            <div>
+                <h4>Livraison ultra rapide</h4>
+                <p>Soyez livré en 20 minutes maximum</p>
+            </div>
+            <button>Découvrir la carte</button>
+        
+        <section class = "contact">
+            <p>PRENDRE RENDEZ-VOUS</p>
+            <h2>Contactez-nous pour réserver au restaurant</h2>
+            <form>
+                <label for= "fname">Prénom:</label><br>
+                <input type = "text" id ="fname" name ="fname"><br>
+                <label for= "name">nom:</label><br>
+                <input type = "text" id ="name" name ="name"><br>
+                <label for= "mail">adresse mail</label><br>
+                <input type = "text" id ="mail" name ="mail"><br>
+                <label for= "fname">message:</label><br>
+                <input type = "text" id ="message" name ="message"><br>
+                <button>Envoyer</button>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <p class = "logo">Jadoo</p>
+                <p>Un voyage gastronomique entre le Japon et la France</p>
+
+            </div>
+            <div>
+                <p>Restaurant</p>
+                <p>Nouveautés</p>
+                <p>Découvrir</p>
+                <p>Commander</p>
+            </div>
+            <div>
+                <p>Contact</p>
+                <p>Prendre RDV</p>
+            </div>
+            <div>
+                <p>UberEats</p>
+                <p>Téléchargez UberEats</p>
+            </div>
+            <button>Googleplay</button>
+            <button>AppleStore</button>
+        </footer>
     </body>
 
 </html>
