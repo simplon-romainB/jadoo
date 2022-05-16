@@ -6,7 +6,9 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="images/x-icon" />
-       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
     </head>
     
     <body>
@@ -27,14 +29,16 @@
                  <div class = 'introcontainer'>
                     <p class = "orangeintro">UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</p>
                     <br>
-                    <h1 class = 'bienvenue'>Bienvenue<br>
+                    <h1 class = 'bienvenue volkhov'>Bienvenue<br>
                     au restaurant<br>
                     Jadoo </h1>
                     <h5 class="introtext">Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi IIDA. </h5>
                     <button class="buttonintro">Découvrir la carte</button>
                 </div>
         </section>
-        <section class = "discover">
+        <section class = "discover" id="news">
+            <img class= 'decoration' src="img/decor_1.svg" alt="une décoration">
+            <img class = "decorationfilet"src="img/decoration_filet.svg" alt="decoration filet">
             <h4 class= "centertext">Découvrez</h4>
             <h2 class="centertext news">Les nouveautés Jadoo</h2>
             <div class = newsflex>
@@ -68,22 +72,22 @@
                 <div class = "animationmaki">
                     <img class= "makimage" src="img/maki_1.png" alt="maki 1">
                     <h3 class="makitext">California Tobiko</h3>
-                    <p class="makitext">Saumon, Thon, mayonnaise</p> 
+                    <p class="makitext2">Saumon, Thon, mayonnaise</p> 
                 </div>
                 <div class = "animationmaki">
                     <img class= "makimage" src="img/maki_2.png" alt="maki 2">
                     <h3 class="makitext">California Rolls</h3>
-                    <p class="makitext">Saumon, avocat, mayonnaise</p>
+                    <p class="makitext2">Saumon, avocat, mayonnaise</p>
                 </div>
                 <div class = "animationmaki">
                     <img class= "makimage" src="img/maki_3.png" alt="maki 3">
                     <h3 class="makitext">ebi</h3>
-                    <p class="makitext">crevettes, avocat, menthe, coriandre</p>
+                    <p class="makitext2">crevettes, avocat, menthe, coriandre</p>
                 </div>
                 <div class = "animationmaki">
                     <img class = "makimage" src="img/maki_4.png" alt="maki 4">
                     <h3 class="makitext">ikura rolls</h3>
-                    <p class="makitext">oeufs de saumons</p>
+                    <p class="makitext2">oeufs de saumons</p>
                 </div>
             </div>
             <button class="buttondiscover">Découvrir la carte</button>
@@ -93,8 +97,9 @@
             <div class = 'video'>
                 <img src="img/button_play.svg" alt = "play button" class="playbutton"> 
             </div>
-            <h1>Un voyage<br> gastronomique<br> entre le Japon<br> et la France...</h1>
-            <p class ="traveltext">Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</p>
+            <img src="img/souligne_rose.svg" alt="souligné rose" class="souligné">
+            <h1 class = "Volkhov discovertext">Un voyage<br> gastronomique<br> entre le Japon<br> et la France...</h1>
+            <p class ="traveltext poppins">Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</p>
         </section>   
             <figure class="wrapperimg1">
                 <img  src="img/wrapper_illustration_1.jpg" alt="illustration 1">
@@ -103,9 +108,9 @@
                 <img  src="img/wrapper_illustration_2.jpg" alt="illustration 2">
             </figure>
         <section class="social">
-            <h4>RAPIDE ET PRATIQUE</h4>
-            <p class = "commandez">Commandez</p>
-            <p class="jadoosite">sur le site Jadoo</p>
+            <h4 class="poppins">RAPIDE ET PRATIQUE</h4>
+            <p class = "commandez volkhov">Commandez</p>
+            <p class="jadoosite volkhov">sur le site Jadoo</p>
             <div class="socialflex">
                 <figure>
                     <img class= "socialimg" src="img/logo_uberEats.png" alt="logo ubereats">
@@ -141,13 +146,19 @@
             <div class = "form">
                 <div class="leftform">
                     <h4 class="formtitle">Formulaire de contact</h4>
-                    <h5 class="formtitle">Remplissez le formulaire ci-dessous
+                    <h5 class="formtext">Remplissez le formulaire ci-dessous<br>
                         pour nous contacter</h5>
                     <form>
-                        <label for= "fname">Prénom</label>
-                        <input type = "text" id ="fname" name ="fname" placeholder="prénom" required>
-                        <label for= "name">nom</label>
-                        <input type = "text" id ="name" name ="name" placeholder = "nom" required>
+                        <div class = "flexform">
+                            <div class="fname">
+                                <label for= "name">nom</label><br>
+                                <input type = "text" id ="name" name ="name" placeholder = "nom" required>
+                            </div>
+                            <div class="fname">
+                                <label for= "fname">Prénom</label><br>
+                                <input type = "text" id ="fname" name ="fname" placeholder="prénom" required>
+                            </div>
+                        </div>
                         <label for= "mail" class="formblock">adresse email</label >
                         <input type = "email" id ="mail" name ="mail" placeholder = "email" required class="formblock">
                         <label for= "fname" class="formblock">message</label >
@@ -160,28 +171,32 @@
             </div>
         </section>
         <footer>
-            <div>
-                <p class = "logo">Jadoo</p>
-                <p>Un voyage gastronomique entre le Japon et la France</p>
+            <div class = "logojadoofooter">
+                <img class = "footerdrum" src="img/logo_jadoo_1.svg" alt="logo jadoo">
+                <img class = "logofooterimg" src="img/logo_jadoo_2.svg" alt="logo jadoo">
+                <p class = "footertext">Un voyage gastronomique entre<br> le Japon et la France</p>
 
             </div>
-            <div>
-                <p>Restaurant</p>
-                <p>Nouveautés</p>
-                <p>Découvrir</p>
-                <p>Commander</p>
+            <div class="planrestaurant">
+                <p class ="titrelinkfooter">Restaurant</p>
+                <a href="#news" class="footerlink">Nouveautés</a>
+                <a href="#discover" class="footerlink">Découvrir</a>
+                <a href="#travel" class="footerlink">Commander</a>
             </div>
-            <div>
-                <p>Contact</p>
-                <p>Prendre RDV</p>
+            <div class = "contactfooter">
+                <p class = "contactfootertitle">Contact</p>
+                <a href='#travel' class="contactfootertext">Prendre RDV</a>
             </div>
-            <div>
-                <p>UberEats</p>
-                <p>Téléchargez UberEats</p>
+            <div class="footerUE">
+                <div>
+                    <p class = "ubereatstitle">Uber <span class = "eats">Eats</span></p>
+                    <p class = "contactfootertext">Téléchargez UberEats</p>
+                </div>
+                <div>
+                    <button class = "download"><img src = 'img/logo_google_play.svg' alt="logo google play"><span class="buttontext">Googleplay</span></button>
+                    <button class = "download"><img src = 'img/logo_apple.svg' alt="logo apple"><span class="buttontext">AppleStore</span></button>
+                </div>
             </div>
-            <button>Googleplay</button>
-            <button>AppleStore</button>
         </footer>
     </body>
-
 </html>
