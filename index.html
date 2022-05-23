@@ -4,6 +4,7 @@
     <head>
         <title>Jadoo: un voyage culinaire gourmet et gourmand.</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="images/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
     
     <body>
         <header>
-            <div class = 'logogroup'>
+            <div class = 'logogroup mlogogroup'>
                 <img class = 'jadoologo'src="img/logo_jadoo_1.jpg" alt="jadoo logo1">
                 <img src="img\logo_jadoo_2.svg" alt="Jadoo Logo2">
             </div>
@@ -23,6 +24,7 @@
                 <li><a href = "#command">Commander</a></li>
                 <li><a href = "#contact">Contactez-nous</a></li>
             </ul>
+            <button><img src="img/menuicon.png" alt="menu" class="menuicon"></button>
         </header>
         <section class="introduction">
                  <br>
@@ -41,8 +43,8 @@
             <img class = "decorationfilet"src="img/decoration_filet.svg" alt="decoration filet">
             <h4 class= "centertext">Découvrez</h4>
             <h2 class="centertext news">Les nouveautés Jadoo</h2>
-            <div class = newsflex>
-                <div class ="newsflexelement">
+            <div class = "newsflex">
+                <div class ="newsflexelement img1">
                     <img class ="newsimg" src="img/plat_1.png" alt="plat 1">
                     <div class ="newstext">
                         Boulettes de poulet<br>
@@ -51,14 +53,14 @@
                     </div>
                     
                 </div>
-                <div class ="newsflexelement">
+                <div class ="newsflexelement img2">
                     <img  class ="newsimg"  src="img/plat_2.png" alt="plat 2">
                     <div class ="newstext">
                         Nouilles japonaises chaudes <br>
                         à base de farine de blé “Udon” 
                     </div>
                 </div> 
-                <div class ="newsflexelement">
+                <div class ="newsflexelement img3">
                     <img class ="newsimg" src="img/plat_3.png" alt="plat 3">
                     <div class ="newstext">
                         Echine de porc panée <br>
@@ -97,6 +99,7 @@
             <div class = 'video'>
                 <img src="img/button_play.svg" alt = "play button" class="playbutton"> 
             </div>
+            <figure class ="mobilechef"><img src="img/illustration_chef.jpg" alt="illustration chef" class = "photochef"></figure>
             <img src="img/souligne_rose.svg" alt="souligné rose" class="souligné">
             <h1 class = "Volkhov discovertext">Un voyage<br> gastronomique<br> entre le Japon<br> et la France...</h1>
             <p class ="traveltext poppins">Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</p>
@@ -104,11 +107,11 @@
             <figure class="wrapperimg1">
                 <img  src="img/wrapper_illustration_1.jpg" alt="illustration 1">
             </figure>
-            <figure class="wrapperimg2">
+            <figure class="wrapperimg2 mwrapper">
                 <img  src="img/wrapper_illustration_2.jpg" alt="illustration 2">
             </figure>
         <section class="social">
-            <h4 class="poppins">RAPIDE ET PRATIQUE</h4>
+            <h4 class="poppins mcenter">RAPIDE ET PRATIQUE</h4>
             <p class = "commandez volkhov">Commandez</p>
             <p class="jadoosite volkhov">sur le site Jadoo</p>
             <div class="socialflex">
@@ -117,7 +120,7 @@
                 </figure>
                 <div class="socialtext">
                     <h4>UberEats</h4>
-                    <p class="ubereatstext">Commandez tous vos plats depuis UberEats</p>
+                    <p class="ubereatstext">Commandez tous vos plats depuis UberEats</p><br>
                 </div>
             </div>
             <div class="socialflex">
@@ -126,7 +129,7 @@
                 </figure>
                 <div class="socialtext">
                     <h4>Jadoo.fr</h4>
-                    <p class="ubereatstext">Ou commandez en ligne sur le site officiel de Jadoo</p>
+                    <p class="ubereatstext">Ou commandez en ligne sur le site officiel de Jadoo</p><br>
                 </div>
             </div>
             <div class="socialflex">
@@ -135,13 +138,13 @@
                 </figure>
                 <div class="socialtext">
                     <h4>Livraison ultra rapide</h4>
-                    <p class="ubereatstext">Soyez livré en 20 minutes maximum</p>
+                    <p class="ubereatstext">Soyez livré en 20 minutes maximum</p><br>
                 </div>
             </div>
-            <button class="buttondiscover">Découvrir la carte</button>
+            <button class="buttonnews">Découvrir la carte</button>
         </section>
         <section class = "contact">
-            <p>PRENDRE RENDEZ-VOUS</p>
+            <h4>PRENDRE RENDEZ-VOUS</h4>
             <h2>Contactez-nous pour réserver au restaurant</h2>
             <div class = "form">
                 <div class="leftform">
@@ -151,11 +154,11 @@
                     <form>
                         <div class = "flexform">
                             <div class="fname">
-                                <label for= "name">nom</label><br>
+                                <label for= "name">Nom</label><br><br>
                                 <input type = "text" id ="name" name ="name" placeholder = "nom" required>
                             </div>
                             <div class="fname">
-                                <label for= "fname">Prénom</label><br>
+                                <label for= "fname">Prénom</label><br><br>
                                 <input type = "text" id ="fname" name ="fname" placeholder="prénom" required>
                             </div>
                         </div>
@@ -184,7 +187,7 @@
                 <a href="#travel" class="footerlink">Commander</a>
             </div>
             <div class = "contactfooter">
-                <p class = "contactfootertitle">Contact</p>
+                <p class = "titrelinkfooter">Contact</p>
                 <a href='#travel' class="contactfootertext">Prendre RDV</a>
             </div>
             <div class="footerUE">

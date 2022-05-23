@@ -12,12 +12,44 @@
     padding:0;
     margin:0;
 }
+
+button {
+    transition: all 0.3s;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    opacity: 0.9;
+    cursor: pointer;
+    
+}
+.footerdrum {
+    width:48px;
+    height:50px;
+}
 a{
     text-decoration: none ;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
 }
+.titrelinkfooter {
+    font-size: 21px;
+    font-family: "Poppins";
+    margin-bottom: 15px;
+    color:black;
+}
+
+
+/*version tablettes*/
+@media screen and  (max-width: 656px){
+.menu {
+       display:none;
+    }
+}
+/*version ordinateurs*/
+@media screen and (min-width: 1024px) {
+
 a:hover {
     text-decoration: underline;   
 }
@@ -69,16 +101,7 @@ body {
     font-size: 16px;
     overflow-x: hidden;
 }
-button {
-    transition: all 0.3s;
-}
-button:hover {
-    cursor: pointer;
-    transform: scale(1.07);
-    opacity: 0.9;
-    cursor: pointer;
-    
-}
+
 .buttontext {
     display:inline-block;
     position:relative;
@@ -107,6 +130,23 @@ button:hover {
     color: white;
     font: Arial, Helvetica, sans-serif;
 }
+
+.buttonnews {
+    background-color: #f1a501;
+    padding:15px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    position: absolute;
+    left: 45%;
+}
+
+.carrousel{
+    display:none;
+}
 .centertext {
     text-align: center;
     margin-left: 150px;;
@@ -117,6 +157,7 @@ button:hover {
     font-size: 20px;
     font: 50px "Volkhov";
 }
+
 .contact {
     height:800px;
     width:100%;
@@ -125,9 +166,7 @@ button:hover {
     text-align:center;
 }
 .contactfooter {
-    display: inline-block;
-    position: relative;
-    left: 800px;
+    width:20%;
 }
 .contactfootertext {
     color: #5e6282;
@@ -178,26 +217,7 @@ button:hover {
     justify-content: flex-start;;
 
 }
-footer{
-    position: relative;
-    padding-top: 70px;
-    padding-bottom: 20px;
-    padding-right: 140px;
-    padding-left: 140px;
-    background-color: #f3f3f3;
-    width:100%;
-    height:200px;
-}
-.footerUE {
-    position:absolute;
-    left: 1250px;
-    bottom:120px;
-}
-.footerlink {
-    color: #5e6282;
-    display: block;
-    margin-bottom: 15px;
-}
+
 .form{
     margin: auto;
     display:flex;
@@ -234,9 +254,28 @@ input{
     border-bottom: 1px solid #e2e4e5;
 }
 input:focus,textarea:focus{
+    padding-bottom: 5px;
     outline: none;
     border-bottom: 1px solid blue;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #f3f3f3;
+    width:100%;
+    height:200px;
+    align-items: flex-start;
+}
+.footerUE {
+    width: 20%;
+}
+.footerlink {
+    color: #5e6282;
+    display: block;
+    margin-bottom: 15px;
+}
+
 h1{
     color: #fff;
 }
@@ -274,6 +313,7 @@ header{
 }
 .introduction {
     background-image: url('../img/illustration_principale.jpg');
+    background-size:120%;
     width: 100%;
     height: 800px;
     background-repeat: no-repeat;
@@ -328,8 +368,8 @@ li{
     color: #5e6282;
 }
 .logojadoofooter {
-    position: absolute;
-    left:415px;
+    width:20%;
+    display: block;
 }
 .logogroup {
     position: absolute;
@@ -362,6 +402,13 @@ li{
     display: inline-block;
     right: -200px;
     vertical-align:middle;
+}
+.menuicon{
+    display:none;
+}
+
+.mobilechef {
+    display: none;
 }
 .news {
     font: 50px "Volkhov";
@@ -408,10 +455,8 @@ li{
 }
 
 .planrestaurant {
-    display:inline-block;
-    position: absolute;
-    top: 70px;
-    left: 750px;
+    width: 20%;
+    
 }
 .playbutton {
     position:relative;
@@ -478,11 +523,7 @@ li{
     margin-bottom: 62px;
     font: 18px Arial, Helvetica, sans-serif;
 }
-.titrelinkfooter {
-    font-size: 21px;
-    font-family: "poppins-bold";
-    margin-bottom: 15px;
-}
+
 .travel {
     width: 200vh;
     height: 1019px;
@@ -529,4 +570,516 @@ li{
     top:2725px;
     left:520px;
 }
+
+}
+
+/*version mobile*/
+@media screen and (max-width:1024px){
+ * {
+    padding:0;
+    margin:0;
+}
+
+
+button {
+    border:none;
+ }   
+
+header {
+    position:sticky;
+    top:0;
+    height:7vh;
+    background-color: white;
+    z-index: 5;
+}
+h4 {
+    font: 18px "Poppins";
+    font-weight: normal;
+    font-weight: 600;
+    color: #5e6282;
+    
+}
+
+.mlogogroup {
+    position:absolute;
+    margin:0 30%;
+}
+.menu {
+    display:none;
+}
+
+.menuicon {
+    width:6vh;
+    height:6vh;
+}
+.orangeintro {
+    color: salmon;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.introcontainer {
+    background-image: url(../img/illustration_principale.jpg);
+    height:70vh;
+    background-size: 90%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-position: 50%;
+}
+.bienvenue {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background-image: url("../img/souligne_rose.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 55%;
+    background-position-y: 97%;
+}
+.introtext{
+    color: #bfc0cd;
+    text-align: center;
+    font: 500 16px/30px "Poppins";
+    margin: 0 10%;
+}
+.decoration {
+    display:none;
+}
+.decorationfilet {
+    display:none;
+}
+.buttonintro {
+    background-color: #f1a501;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+    font: 18px Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.centertext {
+    text-align:center;
+}
+
+.newsflexelement {
+    box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5%;
+    display:inline-block;
+}
+
+.newsflex {
+    display: block;
+    width: 100vw;
+    height:50vh;
+    position: relative;
+    
+}
+
+.img1 {
+    position: absolute;
+    opacity: 0;
+    left:10%;
+    animation-name:imganim1;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5%;
+}
+
+@keyframes imganim1 {
+    0%{opacity:0;
+
+    }
+
+    5%{
+        opacity:1;
+
+    }
+    15%{
+        transform: translate(0);
+    }
+    25%{transform: translate(0);
+        opacity:1;}
+    33%{transform: translate(-50vw);
+        opacity:0}
+
+}
+.img2{
+    position:absolute;
+    opacity: 0;
+    animation-name: imganim2;
+    left:10%;
+    animation-duration:15s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5%;
+}
+
+@keyframes imganim2{
+    0%{opacity:0;
+
+    }
+
+    5%{
+        opacity:1;
+
+    }
+    15%{
+        transform: translate(0);
+    }
+    25%{transform: translate(0);
+        opacity:1;}
+    33%{transform: translate(-50vw);
+        opacity:0}
+
+}
+.img3{
+    position:absolute;
+    opacity: 0;
+    animation-name:imganim3;
+    left:10%;
+    animation-duration:15s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5%;
+}
+
+@keyframes imganim3{
+    0%{opacity:0;
+
+    }
+
+    5%{
+        opacity:1;
+
+    }
+    15%{
+        transform: translate(0);
+    }
+    25%{transform: translate(0);
+        opacity:1;}
+    33%{transform: translate(-50vw);
+        opacity:0}
+}
+
+.news {
+    font: 50px "Volkhov";
+    color: #14183e;
+    margin-top: 10px;
+}
+.newstext {  
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    color: #5e6282;
+}
+
+.animationmaki {
+    position:relative;
+    background-color: white;
+    display:block;
+    width:200px;
+    height:208px;
+    border-radius: 5%;
+}
+.makimage {
+    margin:auto;
+    display: inline-block;
+}
+.makitext {
+    width: 200px;
+    text-align: left;
+    font-family: "Open sans";
+    display: inline-block;
+    position:absolute;
+    
+}
+.makitext2 {
+    width:200px;
+    text-align: left;
+    font-family: "Poppins";
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+.buttondiscover {
+    background-color: #f1a501;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+    font: 18px Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+    bottom:5vh;
+    left: 25%;
+    
+}
+
+.souligné {
+    display:none;
+}
+
+.discovertext {
+    display:none;
+}
+
+.traveltext {
+    display:none;
+}
+.video {
+    display:block;
+    background-image: url(../img/visu_video.jpg);
+    width:100%;
+    height: 27vh;
+    background-size: cover;
+}
+.playbutton {
+    position:relative;
+    top: 8.5vh;
+    left:42vw;
+    display:inline-block;
+    background-color:white;
+    border-radius: 50%;
+    border: 3px solid white;
+    
+}
+.playbutton:hover{
+    opacity:0.9;
+    cursor: pointer;
+}
+
+.mobilechef {
+    width:100%;
+    height: 32vh;
+}
+
+.photochef {
+    width:100%;
+    height:100%;
+}
+.mwrapper {
+    display:block;
+    position:relative;
+    bottom: 4px;
+    
+}
+.mcenter {
+    text-align: center;
+}
+
+.commandez {
+    color: salmon;
+    width: 100%;
+    font-size: 20px;
+    font: 40px "Volkhov";
+    text-align: center;
+}
+.jadoosite{
+    font: 40px "Volkhov";
+    color: #14183e;
+    text-align:center;
+}
+.socialflex {
+    display: flex; 
+    margin-left:5%;
+    margin-right: 5%;
+    
+    
+    
+}
+.socialimg {
+    width:18vw;
+    margin-right:3vw;  
+}
+.ubereatstext {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    color: #3e3f43;
+}
+
+.buttonnews {
+    background-color: #f1a501;
+    padding:15px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    font: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    position: relative;
+    left: 30%;
+}
+
+h2{
+    font: 50px "Volkhov";
+    color: #14183e;
+    margin-top: 10px;  
+    text-align: center; 
+}
+h4 {
+    font: 18px "Poppins";
+    font-weight: normal;
+    font-weight: 600;
+    color: #5e6282;
+    text-align: center;
+    
+}
+ .formtext {
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px; 
+}
+
+label {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+.formblock {
+    display:block;
+    width:100%;
+    text-align: left;
+    font-size: 16px;
+    
+}
+.formtext {
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px; 
+}
+.formtitle {
+    color: #000;
+    text-align:center;
+    font: 18px "Poppins";
+    font-weight: 600;
+}
+input{
+    border:none;
+    border-bottom: 1px solid #e2e4e5;
+    width: 100%;
+}
+input:focus,textarea:focus{
+    padding-bottom: 5px;
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+
+input:hover {
+    transform: scale(1.025);
+}
+.submitbutton {
+    background-color: #007aff;
+    width:139px;
+    height:62px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 62px;
+    font: 18px Arial, Helvetica, sans-serif;
+    position: relative;
+    left:30%;
+
+    
+}
+.fname {
+    width:100%;
+    text-align: left;
+    display:block;
+}
+footer{
+    position: relative;
+    background-color: #f3f3f3;
+    width:100%;
+    height:75vh;
+    align-items: flex-start;
+}
+.planrestaurant {
+    display:inline-block;
+    position: relative;
+    left:10%;
+    bottom: -1.5vh;
+}
+.contactfooter {
+    display: inline-block;
+    position: relative;
+    bottom:11vh;
+    left:25vw;
+    
+}
+.contactfootertext {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    color: #5e6282;
+}
+
+.footerlink {
+    display:block;
+    margin-bottom:3vh;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    color: #5e6282;
+}
+.logojadoofooter {
+    text-align: center;
+}
+p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    color: #5e6282;
+}
+.logofooterimg {
+    height: 50px;
+    margin-left: 15px;
+}
+
+}
+
+
+
+
+
+
 
